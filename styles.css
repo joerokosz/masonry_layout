@@ -1,0 +1,40 @@
+/* Masonry Layout Project stylesheet 9/19/23 */
+
+body {
+	background-color: skyblue;
+}
+
+main {
+	max-width: 1200px;
+	margin: 0px auto;
+}
+
+h2{
+	text-align: center;
+	color: white;
+	text-shadow: dodgerblue 2px 1px 3px;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+section#masonry {
+	column-count: 4;
+	column-gap: 25px;
+}
+
+div.item {
+	margin-bottom: 15px;
+}
+
+/* media query for tablet or smaller screens */
+
+@media only screen and (max-width: 800px) {
+	section#masonry {
+		column-count: 2;
+		column-gap: 15px;
+	}
+}
